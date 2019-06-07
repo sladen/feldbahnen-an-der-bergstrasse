@@ -1,13 +1,24 @@
 % -*- coding: utf-8; mode: latex -*-
 % twoside
-\documentclass[a4paper,hidelinks]{report}
+\documentclass[a4paper]{report}
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
+
+\bibliographystyle{unsrt}
+
+\usepackage[british]{babel}
+\usepackage[babel=true]{microtype}
+\usepackage{natbib}
+\setlength{\bibsep}{0.0pt}
+\usepackage[
+  pdfauthor={Paul Sladen},
+  pdfencoding=unicode,
+  backref=section
+]{hyperref}
 \hypersetup{
   colorlinks   = true,
   urlcolor     = blue,
   linkcolor    = blue,
-  citecolor    = red
+  citecolor    = red,
   pdfborder = {0 0 0}
 }
 \usepackage[english]{isodate}
@@ -19,6 +30,7 @@
 \maketitle
 \tableofcontents{}
 
+%\begin{frontmatter}
 \part{Foreward / Vorwärt}
 \section*{Abstract}
 
@@ -32,7 +44,28 @@ valley, while the towering cliff edge has been punctuated with
 numerous mines and quarries; each with its narrow gauge railway
 system and trains: {\it the Feldbahnen an der Bergstrasse.}
 
+\section*{Structure}
+
+Research and collection of material dates from 2016-- onwards.
+Citations are in German, with the write-up in English.
+
+The principal corridor of interest is the linear strip enclosed
+between the Frankfurt--Heidelberg--Karlsruhe mainline railway, running
+on the floor of the Upper Rhine valley, and the tall escarpment just
+beyond---the Bergstrasse route.  A large cluster of activity is
+identified in the vicinity of Wiesloch, a historic centre of mining,
+at the southern end.  At the foci of this cluster was created the
+open-air Wiesloch narrow gauge and industrial museum.
+
+It is argued that the unique structure of the mining industry and
+availability of material at Wiesloch enabled the museum, in the same
+way that the unique geological structure of the Wiesloch cluster
+enabled the mining activity in the first place.
+
+Other narrow gauge systems encountered are covered in the appendix, 
+
 %\end{section}
+%\end{frontmatter}
 
 \part{Feldbahnen an~der~Bergstrasse}
 
@@ -155,23 +188,11 @@ cut up in 2016, with the embankment removed afterwards.  The Feldbahn
 previously crossed in the quarry were Oberklamweg road/cycle-track and
 L100 road to Boxberg meet.
 
-\section{Nußloch}
+\section{Steinbruch Heidelberg Cement}
 
-At the south-east is the huge Heidelberg Cement quarry, with material
-transport originally on the tram tracks and later by a 5-kilometre
-long ropeway.
-
-\subsection{Dampfziegelei Nußloch}
-
-Clay was mined in the Dammstücker pit, between the B3 road, and the
-Leimbach river.  A small concrete and girder bridge carried the
-Feldbahn trains over the River Leimbach, immediately down a ramp, and
-through a circular tunnel under the new road between Nußloch and Walldorf
-(K4256).  The brickworks were demolished, with the Racket Centre Nußloch
-tennis club constructed on the site.
-
-As of 2019 the Feldbahn bridge over the Leimbach remained in-situ, with the
-girders that used to hold the rails visible, but without tracks.
+At the south-east of Nussloch is the huge Heidelberg Cement quarry,
+with material transport originally on the tram tracks and later by a
+5-kilometre long ropeway back to the Cement factory.
 
 \chapter{Tourist}
 \section{Dossenheim}
@@ -197,9 +218,27 @@ there is a small them park containing the Parkbahn Märchenparadies
 miniature railway.  The route operates in a clockwise circular
 direction.
 
-\part{Feldbahnen in~Wiesloch}
+\part{The Wiesloch cluster}
 
 \chapter{Historical}
+
+\section{Nußloch}
+
+Nussloch forms the northern edge of the tight Wiesloch cluster, here
+the brickworks was placed far outside the town, with the clay pit only
+1 kilometre from the Tonwaren Industrie Wiesloch workings.
+
+\subsection{Dampfziegelei Nußloch}
+
+Clay was mined in the Dammstücker pit, between the B3 road, and the
+Leimbach river.  A small concrete and girder bridge carried the
+Feldbahn trains over the River Leimbach, immediately down a ramp, and
+through a circular tunnel under the new road between Nußloch and Walldorf
+(K4256).  The brickworks were demolished, with the Racket Centre Nußloch
+tennis club constructed on the site.
+
+As of 2019 the Feldbahn bridge over the Leimbach remained in-situ, with the
+girders that used to hold the rails visible, but without tracks.
 
 \section{Wiesloch}
 
@@ -252,7 +291,7 @@ Bott AG in Rauenberg.
 The clay from the Frauenweiler pits travelled several kilometres
 before meeting the Wiesloch--Waldangeltalloch local standard gauge
 railway.  The tracks then travelled side-by-side in parallel until
-reaching the edge of Rauenberg.
+reaching the edge of Rauenberg.\cite{schubert1989}
 
 In September 1967 a exhibition of three narrow gauge locomotives was
 organised on this side-by-side section, with steam locomotive SWEG 14
@@ -329,5 +368,9 @@ A narrow gauge locomotive is on the site.
 
 The former internal Feldbahn of the brickworks running through the
 drying sheds was converted into a long oval for passenger use.
+
+\part{Appendix}
+
+\bibliography{feldbahn}
 
 \end{document}
