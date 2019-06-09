@@ -9,11 +9,13 @@
 #	pdflatex $<
 #	pdflatex $<
 
-book.pdf: book.tex feldbahn.bib
+book.pdf: book.tex
+
+book.aux: book.bib
+
+book.bib: book.tex
 
 .PHONY: all clean realclean
-
-all: book.pdf
 
 %.pdf: %.tex %.bbl
 	pdflatex -interaction=nonstopmode $< -draftmode
@@ -32,4 +34,6 @@ clean:
 realclean: clean
 	rm -f book.out
 	rm -f book.pdf
+
+all: book.pdf
 
